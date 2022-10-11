@@ -1,0 +1,36 @@
+{
+  "author": {
+    "name": "Schasta",
+    "email": "schasta@gmail.com",
+    "url": "http://schasta.com.br"
+  },
+  "name": "globfs",
+  "description": "Github package",
+  "homepage": "https://github.com/scha-chan/github-package",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scha-chan/github-package.git"
+  },
+  "scripts": {
+      "setup-test": "cd test && npm run setup",
+      "test": "cd test && npm run test",
+      "lint": "eslint index.js cli.js",
+      "trypublish": "npm publish || true"
+  },
+  "version": "0.5.0",
+  "engines": {
+    "node": ">=12.0"
+  },
+  "bin": {
+    "globfs": "cli.js"
+  },
+  "dependencies": {
+    "commander": "^3.0.1",
+    "fs-extra": "^8.1.x",
+    "glob": "^7.1.x"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.x",
+    "eslint-config-google": "^0.14.x"
+  }
+}
