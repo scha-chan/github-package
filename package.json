@@ -11,9 +11,12 @@
     "type": "git",
     "url": "https://github.com/scha-chan/github-package.git"
   },
-  "scripts": {
+  "scripts": {      
+      "setup-test": "cd test && npm run setup",
+      "test": "cd test && npm run test",
       "lint": "eslint index.js cli.js",
       "trypublish": "npm publish || true"
+    
   },
   "version": "0.5.0",
   "engines": {
